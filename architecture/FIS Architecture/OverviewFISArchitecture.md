@@ -1,6 +1,6 @@
 # FIS Overview Architecture
 
-<img width="100%" height="auto" src="./images/GeneralFISArchitecture.jpg">
+<img width="100%" height="auto" src="../../images/GeneralFISArchitecture.jpg">
 
 - Back-end tương tác trực tiếp với Permission Contracts và LC Contracts để thực hiện các thao tác:
   - Check permission org, account role ...

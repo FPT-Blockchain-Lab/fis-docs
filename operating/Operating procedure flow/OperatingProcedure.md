@@ -1,7 +1,7 @@
 # Operating Procedures
 
 <p align="center">
-  <img width="1200" height="350" src="./images/Standard_LC_Stages.png">
+  <img width="1200" height="350" src="../../images/Standard_LC_Stages.png">
 </p>
 
 Cách vận hành để thực hiện đầu đủ 1 luồng cho LC trên blockchain:

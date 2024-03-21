@@ -1,7 +1,7 @@
 # LC Platform - Smart Contracts
 
 <p align="center">
-  <img width="550" height="400" src="./images/GeneralArchitecture.png">
+  <img width="550" height="400" src="../../images/GeneralArchitecture.png">
 </p>
 
 Về mặt quản lý và kiến trúc tổng quan, thì hệ thống các smart contract sẽ được chia thành 2 groups phục vụ cho những layer riêng biệt:
@@ -27,7 +27,7 @@ Về mặt quản lý và kiến trúc tổng quan, thì hệ thống các smart
 ## LC Platform
 
 <p align="center">
-  <img width="1000" height="600" src="./images/LC_Platform.png">
+  <img width="1000" height="600" src="../../images/LC_Platform.png">
 </p>
 
 - LC Platform (smart contracts) được chia ra thành 2 modules chính:
@@ -82,11 +82,11 @@ Về mặt quản lý và kiến trúc tổng quan, thì hệ thống các smart
 ## Stages and Integrity
 
 <p align="center">
-  <img width="1200" height="350" src="./images/Standard_LC_Stages.png">
+  <img width="1200" height="350" src="../../images/Standard_LC_Stages.png">
 </p>
 
 <p align="center">
-  <img width="1200" height="300" src="./images/UPAS_LC_Stages.png">
+  <img width="1200" height="300" src="../../images/UPAS_LC_Stages.png">
 </p>
 
 Hiện tại, có 2 loại LC chính là - `Standard LC Contract` và `UPAS LC Contract` và `UPAS_LC_IMPORT`, `STANDARD_LC_DISCOUNT`, `STANDARD_LC_EXPORT`,
@@ -155,13 +155,13 @@ struct StageInfo {
   đó hay không
 
 <p align="center">
-  <img width="800" height="400" src="./images/Stages.png">
+  <img width="800" height="400" src="../../images/Stages.png">
 </p>
 
 ### Đưa thông tin lên LC Contract
 
 <p align="center">
-  <img width="400" height="400" src="./images/Approve.png">
+  <img width="400" height="400" src="../../images/Approve.png">
 </p>
 
 - Khi `Standard LC Contract` và `UPAS LC Contract` và `UPAS_LC_IMPORT`, `STANDARD_LC_DISCOUNT`, `STANDARD_LC_EXPORT`, `STANDARD_LC_IMPORT` được tạo ra, request
