@@ -164,10 +164,11 @@ struct StageInfo {
   <img width="400" height="400" src="./images/Approve.png">
 </p>
 
-- Khi `Standard LC Contract` hoặc `UPAS LC Contract` được tạo ra, request này sẽ đi kèm với `documentId`. Đây cũng chính là `prevHash` của Stage 1.1
+- Khi `Standard LC Contract` và `UPAS LC Contract` và `UPAS_LC_IMPORT`, `STANDARD_LC_DISCOUNT`, `STANDARD_LC_EXPORT`, `STANDARD_LC_IMPORT` được tạo ra, request
+  này sẽ đi kèm với `documentId`. Đây cũng chính là `prevHash` của Stage 1.1
 - Theo như design ban đầu, `documentId` được tạo ra từ hash của thông tin hợp đồng giữa Applicant - Beneficiary. Thông tin này sẽ được lưu trên một contract
   on-chain. Scope này đã bị cắt bỏ
-- `Standard LC Factory` và `UPAS LC Factory` sẽ lưu một mapping `documentId -> address_of_lc_contract`
+- `LC Factory` sẽ lưu một mapping `documentId -> address_of_lc_contract`
 - User khi approve và đưa thông tin cập nhật lên LC Contract sẽ cần cung cấp:
   - documentId
   - stage + sub-stage
@@ -175,8 +176,8 @@ struct StageInfo {
   - contentHash
   - url
   - signature
-- Sau đó, `Router Service` sẽ có nhiệm vụ look-up LC Contract tương ứng với `documentId` thông qua việc liên lạc với 2 Factory contract để trả về address của LC
-  Contract
+- Sau đó, `Router Service` sẽ có nhiệm vụ look-up LC Contract tương ứng với `documentId` thông qua việc liên lạc với LC Factory contract để trả về address của
+  LC Contract
   - Nếu như không tìm thấy address -> Fail (vì documentId không tồn tại)
   - Nếu có -> thông tin sẽ được chuyển sang LC Contract để giải quyết
 - LC Contract có nhiệm vụ kiểm tra về thông tin cũng như là kiểm tra quyền gửi thông tin approve của account người gửi.
